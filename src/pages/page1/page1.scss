@@ -1,0 +1,16 @@
+page-page1 {
+    .map-container {
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        bottom: 0px;
+    }
+    [noScroll] {
+    overflow: hidden;
+  }
+
+  #map {
+    height: 100%;
+    width: 100%;
+  }
+}
