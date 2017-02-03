@@ -35,7 +35,7 @@ export class Page1 {
     let map = Leaflet.map('map');
     Leaflet.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v10/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoicGF0cmlja3IiLCJhIjoiY2l2aW9lcXlvMDFqdTJvbGI2eXUwc2VjYSJ9.trTzsdDXD2lMJpTfCVsVuA', {
       attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-      maxZoom: 13
+      maxZoom: 18
     }).addTo(map);
 
     //web location
@@ -57,7 +57,7 @@ export class Page1 {
     }
 
     map.on('locationerror', onLocationError);
-    
+
   }
 
   onMapClicked(e) {
